@@ -1,0 +1,32 @@
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    .container {
+        background: white;
+        border: 1px solid black;
+        border-radius: 15px;
+        margin-top: 50vh;
+        margin-bottom: 15px;
+        
+        .dismenuizq {
+            padding: 12px;
+        }
+        .dismenuderc {
+            background: white;
+            padding: 12px;
+            border-radius: 0 15px 0;
+            
+        }
+        .dismenu {
+            height: auto;
+            a {
+                color: black;
+            }
+        }
+    }
+}
+
+.textnegrita {
+    font-weight: 500;
+}
+

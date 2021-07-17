@@ -1,0 +1,14 @@
+
+
+<div class="container-fluid">
+  <ul class="row row-cols-auto">
+    <li class="col list-group-item w-25" *ngFor="let game of misGames">
+      <div class="disgame">
+        <a [routerLink]="['/page-content', game.nombre]">
+          <img [src]="game.UrlImgPortada" alt="Imagen de portada" />
+          <p>{{ game.nombre }}</p>
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,38 @@
+
+    .container-fluid {
+        background-color: lightblue;
+            
+        .list-group-item {
+            border: 1px solid black;
+            padding-left: 10px;
+        }
+        
+        .list-group-item:hover {
+            background-color: lightblue;
+        }
+        .btn {
+            width: 20%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid black;
+        
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .btn1 {
+            padding: 10px 14px;
+            margin: 18px 0px 0px 45px;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .disgame{
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        
+    }
