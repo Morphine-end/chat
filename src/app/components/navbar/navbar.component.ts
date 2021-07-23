@@ -14,11 +14,15 @@ export class NavbarComponent implements OnInit {
   constructor(private router: Router, private authService: AuthService, private modalService: ModalService) { }
 
   ngOnInit(): void {
-    this.bodyText = 'This text can be updated in modal 1';
+    // this.bodyText = 'This text can be updated in modal 1';
   }
   
 
-  logout() {
+  logOut() {
+    this.authService.SignOutExample();
     
   }
+  
+  
+
 }

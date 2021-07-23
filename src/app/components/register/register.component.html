@@ -1,4 +1,4 @@
-
+<!-- 
 <div class="modal fade" id="modalRegistro" aria-hidden="true" aria-labelledby="Registro" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -27,4 +27,33 @@
       </div>
     </div>
   </div>
+   -->
+
+   <div class="container">
+    <div class="signUpCard">
+     <form #signupForm="ngForm">
+      <h2 class="heading">Sign Up</h2>
   
+      <label class="label">Email</label>
+         <input 
+         type="email" name="email"
+         placeholder="Enter your email address" 
+         [(ngModel)]="email" class="formInput"
+         maxlength="60" required/>
+  
+      <label class="label">Password</label>
+        <input 
+          type="password" name="password"
+          placeholder="Choose a password" 
+          [(ngModel)]="password" class="formInput" 
+          required/>
+  
+     
+        <button [disabled]="!signupForm.form.valid" 
+                type="submit" (click)="signUpExample()"
+                class="btn" id="btn-signUp">
+                Sign Up
+        </button>
+      </form>
+    </div>
+  </div>

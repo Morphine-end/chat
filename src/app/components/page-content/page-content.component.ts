@@ -19,8 +19,7 @@ export class PageContentComponent implements OnInit {
   ngOnInit(): void {
     console.log(this.id);
     this.loadOneGame()
-    /*
-    this.game = this.gameService.getGame(this.id);*/
+    
     console.log(this.game);
     
   }

@@ -1,41 +1,52 @@
 
-<!-- Click on Modal Button -->
-<button type="button" class="btn btn-primary mx-auto d-block mt-5" data-bs-toggle="modal" data-bs-target="#modalSign">
-    inicio sesion
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="modalSign" tabindex="-1" aria-labelledby="inicio" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="Inicio">INICIAR SESION</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+
+<!-- <body class="text-center">
+    <div class="form-signin bg-light">
+        <form>
+            <img class="mb-4" src="https://www.dropbox.com/s/zgbbayj1iqd9fjf/CF_Mark.jpg?raw=1" alt="" width="72">
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
             </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label class="form-label">correo electronico</label>
-                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" />
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">contraseña</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="rememberMe" />
-                        <label class="form-check-label" for="rememberMe">Recordarme</label>
-                    </div>
-                </form>
-                <button (click)="authService.GoogleAuth()" class="btn btn-primary"> conecta con google </button>
-                <div class="modal-footer d-block">
-                    <p class="float-start">¿No tienes cuenta? <button class="btn btn-primary"
-                         data-bs-target="#modalRegistro" data-bs-toggle="modal" data-bs-dismiss="modal">Registro</button>
-                    <button type="submit" class="btn btn-warning float-end">Inicio</button>
-                </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
             </div>
-        </div>
+
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-dark" type="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+        </form>
+    </div> -->
+
+
+  
+ 
+ <div class="container">
+    <div class="loginCard">
+      <h2 class="heading">Log In</h2>
+        <input 
+          [(ngModel)]="email"
+          type="email" 
+          name="email" 
+          class="formInput" />
+        <input type="password" 
+          [(ngModel)]="password"
+          name="password" 
+          class="formInput" />
+        <button class="btn" 
+                id="btn-login" 
+                (click)="loginInExample()">
+                Log In
+        </button>
+        <button (click)="loginGoogle()" class="btn btn-primary"> conecta con google </button>
     </div>
-</div>
-
-
+  </div>
